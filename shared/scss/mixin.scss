@@ -1,0 +1,15 @@
+@mixin ascrollbar($bg-color,$bg-color-hover) {
+    &::-webkit-scrollbar {
+      width: 6px;
+      &-track {
+        background: transparent;
+      }
+      &-thumb {
+        background: linear-gradient($bg-color, $bg-color-hover);
+        border-radius: 10px;
+        &:hover {
+          // background: $bg-color-hover;
+        }
+      }
+    }
+  }

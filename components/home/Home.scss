@@ -1,0 +1,67 @@
+.home {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 10px #ffffff;
+    background-color: rgb(53, 59, 39);
+    .cover-image {
+        border-radius: 10px;
+        width: 100%;
+        height: 50%;
+        // background: url("../../assets/image.jpg");
+        background-size: contain;
+        clip-path: polygon(100% 0, 100% 80%,50% 100%, 0 80%, 0 0);
+    }
+    .content {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-20%);
+         height: 100%;
+         width: 100%;    
+        .profile{
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 0 0 10px 10px rgb(0, 255, 106) ;
+            border-radius: 50%
+        }
+        .data {
+            text-align: center;
+            font-weight: 400;
+            line-height: 5px;
+            .name{
+                font-size: 30px;
+                color: rgb(13, 255, 243);
+            }
+            .work {
+                font-size: 20px;
+                color: white;
+            }
+            .icons{
+               display: flex;
+               justify-content: center;
+               i{
+                   padding: 10px;
+                   font-size: 25px;
+                   color: rgb(199, 159, 121);
+                 &:hover{
+                     transform: scale(1.5) rotate(-20deg);
+                     transition: 0.2s;
+                 }
+               }
+               
+                 #linkedin:hover{
+                     color: rgb(44, 109, 173); 
+                 }
+                 #instagram:hover{
+                     color: rgb(255, 0, 76);
+                 }  
+                 #facebook:hover{
+                     color: rgb(50, 75, 150);
+                 }       
+               
+            }
+        }
+    }
+}
